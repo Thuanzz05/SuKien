@@ -70,14 +70,15 @@ small,.eyebrow,.panel-label { font-size:13.5px; line-height:1.4; }
 .hero-chip { position:absolute; z-index:-1; top:16%; right:2%; width:min(22vw,300px); opacity:.72; filter:drop-shadow(0 20px 30px rgba(70,60,165,.18)); animation:float 7s ease-in-out infinite; }
 .hero-wafer { position:absolute; z-index:-1; right:10%; bottom:6%; width:min(15vw,200px); opacity:.7; animation:float 8s ease-in-out -2s infinite; }
 .hero-card { width:min(690px,var(--frame))!important; padding:27px 32px 26px; border-radius:25px; text-align:center; color:#1d245e; background:linear-gradient(145deg,rgba(249,251,255,.64),rgba(217,205,249,.54) 56%,rgba(244,204,233,.53)); box-shadow:0 22px 70px rgba(63,60,151,.13),inset 0 1px 0 rgba(255,255,255,.85); backdrop-filter:blur(14px); }
-.hero-brand-lockup { display:flex; align-items:center; justify-content:center; gap:10px; color:#273276; }
-.hero-brand-lockup > span:last-child { display:flex; flex-direction:column; align-items:flex-start; gap:2px; text-align:left; }
-.hero-brand-lockup b { font-size:17.5px; line-height:1; font-weight:850; letter-spacing:.06em; }
-.hero-brand-lockup small { font-size:13.5px; line-height:1.2; font-weight:700; letter-spacing:.04em; }
+.hero-logo { display:block; width:min(280px,100%); height:auto; margin:0 auto; }
 .gtisd-symbol { position:relative; width:36px; height:36px; flex:0 0 36px; display:block; }
 .gtisd-symbol i { position:absolute; width:14px; height:14px; border:2px solid #56a7cc; border-radius:9px 9px 3px 9px; transform:rotate(45deg); }
 .gtisd-symbol i:nth-child(1){top:1px;left:2px;border-color:#9dcc3f}.gtisd-symbol i:nth-child(2){top:1px;right:2px;transform:rotate(135deg);border-color:#38b9dd}.gtisd-symbol i:nth-child(3){bottom:1px;left:2px;transform:rotate(-45deg);border-color:#38b9dd}.gtisd-symbol i:nth-child(4){right:2px;bottom:1px;transform:rotate(-135deg);border-color:#9dcc3f}
-.hero-kicker { margin:22px 0 7px; color:#5860b2; font-size:13.5px; font-weight:750; letter-spacing:.12em; }
+.hero-kicker { margin:14px 0 0; color:#5860b2; font-size:13.5px; font-weight:750; letter-spacing:.12em; }
+.hero-week-title { margin:12px 0 4px; color:#4e549d; font-size:13.5px; font-weight:850; letter-spacing:.13em; }
+.hero-week-dates { width:max-content; max-width:100%; margin:0 auto 12px; padding:7px 15px; display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:4px 12px; border:1px solid rgba(255,255,255,.72); border-radius:24px; color:#353a7b; background:rgba(255,255,255,.34); }
+.hero-week-dates strong { font-size:17.5px; }
+.hero-week-dates span { color:#555b8e; font-size:13.5px; }
 .hero-card h1 { font-size:36px; line-height:1.04; letter-spacing:-.035em; }
 .hero-card h1 strong { color:#5c50b3; font-weight:inherit; }
 .hero-subtitle { margin:13px 0 10px; color:#27285f; font-size:17.5px; font-weight:700; }
@@ -140,6 +141,12 @@ small,.eyebrow,.panel-label { font-size:13.5px; line-height:1.4; }
 .program-panel li { padding:9px 0; border-top:1px solid rgba(255,255,255,.21); color:rgba(255,255,255,.91); font-size:17.5px; line-height:1.5; }
 .program-image { min-height:370px; overflow:hidden; border:1px solid rgba(255,255,255,.45); border-radius:18px; background:rgba(255,255,255,.12); }
 .program-image img { width:100%; height:100%; min-height:370px; object-fit:cover; }
+.event-program-card { align-items:stretch; }
+.event-program-copy { display:flex; flex-direction:column; }
+.event-program-venue { margin:12px 0 0; color:rgba(255,255,255,.72); font-size:14px; }
+.event-schedule { margin:12px 0 0; padding:0; list-style:none; }
+.event-schedule li { display:grid; grid-template-columns:104px minmax(0,1fr); gap:12px; padding:9px 0; border-top:1px solid rgba(255,255,255,.21); color:rgba(255,255,255,.91); font-size:14px; line-height:1.4; }
+.event-schedule time { color:#fff; font-size:13.5px; font-weight:800; white-space:nowrap; }
 
 /* GTISD pillars as a rising milestone path */
 .pillars-section { color:#fff; }
@@ -359,6 +366,7 @@ body.lightbox-open { overflow:hidden; }
   .network-card p { font-size:17.5px; }
   .network-index { top:8px; left:8px; width:26px; height:26px; font-size:13.5px; }
   .program-card { grid-template-columns:1fr; padding:14px; gap:14px; }
+  .event-schedule li { grid-template-columns:92px minmax(0,1fr); gap:8px; }
   .program-tabs { margin-bottom:14px; }
   .program-tabs button { min-height:34px; padding:0 10px; font-size:13.5px; }
   .program-panel h3 { font-size:21px; }
